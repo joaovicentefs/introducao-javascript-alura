@@ -37,3 +37,12 @@ for(var i = 0; i < pacientes.length; i++) {
         tdImc.textContent = "Altura e/ou peso inválidos!"
     }
 }
+
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click",function (){
+    console.log("fui clicado anonimanente")
+}); // usando uma função anonima quando coloco ela direto no escutador de evento
+
+// function mostraMensagem(){
+//     console.log("Opa fui clicado");
+// }
