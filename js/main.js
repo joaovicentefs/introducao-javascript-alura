@@ -39,10 +39,7 @@ for(var i = 0; i < pacientes.length; i++) {
 }
 
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
-botaoAdicionar.addEventListener("click",function (){
-    console.log("fui clicado anonimanente")
-}); // usando uma função anonima quando coloco ela direto no escutador de evento
-
-// function mostraMensagem(){
-//     console.log("Opa fui clicado");
-// }
+botaoAdicionar.addEventListener("click",function (event){
+    event.preventDefault();
+    console.log("Oi Eu sou o botão e fui clicado");
+});
